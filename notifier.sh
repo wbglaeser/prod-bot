@@ -14,7 +14,7 @@ do
         stime=${start_time[${i}]}
         if [ "$stime" == $current_time ]; then
             type_of_work=${type[i]}
-            echo "${type[i]} | URGENT\nInfo: ${description[i]} | Time: ${start_time[i]} to ${end_time[i]}" | terminal-notifier -sound default
+            echo "${type[i]} | URGENT\nInfo: ${details[i]} | Time: ${start_time[i]} to ${end_time[i]}" | terminal-notifier -sound default
         fi
     done
     sleep 60
